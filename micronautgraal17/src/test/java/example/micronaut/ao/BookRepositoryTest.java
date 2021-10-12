@@ -104,15 +104,15 @@ public class BookRepositoryTest {
     @Test
     void findAllGetFirstByCrudRepositoryTest() {
         CrudRepository<Book, Long> crudRepository = this.bookRepository;
-        Entity<Long> entity = crudRepository.findAll().iterator().next();
-        Assertions.assertNotNull(entity);
+        Book book = crudRepository.findAll().iterator().next();
+        Assertions.assertNotNull(book);
     }
 
-//    @Test
-//    void findByIDUsingCrudRepositoryTest() {
-//        CrudRepository<Book, Long> crudRepository = this.bookRepository;
-//        Book book = crudRepository.findById(1L).orElse(null);
-//        Assertions.assertNotNull(book);
-//
-//    }
+    @Test
+    void findByIDUsingCrudRepositoryTest() {
+        CrudRepository<Book, Long> crudRepository = this.bookRepository;
+        Book book = crudRepository.findById(1L).orElse(null);
+        Assertions.assertNotNull(book);
+
+    }
 }

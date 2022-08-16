@@ -1,12 +1,14 @@
 package example.micronaut.ao;
 
+
+import java.util.Arrays;
+
+import javax.transaction.Transactional;
+
 import io.micronaut.context.event.StartupEvent;
 import io.micronaut.runtime.Micronaut;
 import io.micronaut.runtime.event.annotation.EventListener;
 import jakarta.inject.Singleton;
-
-import javax.transaction.Transactional;
-import java.util.Arrays;
 
 @Singleton
 public class Application {

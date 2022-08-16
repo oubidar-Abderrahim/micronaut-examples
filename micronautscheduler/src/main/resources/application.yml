@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: micronautscheduler
+
+my:
+  cron: "0 43 14 1/1 * ?"

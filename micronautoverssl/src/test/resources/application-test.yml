@@ -1,0 +1,11 @@
+micronaut:
+  ssl:
+    port: -1
+  http:
+    client:
+      ssl:
+        key-store:
+          path: classpath:ssl/client.p12
+          password: ${PASS}
+          type: PKCS12
+        insecureTrustAllCertificates: true

@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: micronautoverssl
+  security:
+    x509:
+      enabled: true
+  ssl:
+    enabled: true
+  server:
+    ssl:
+      client-authentication: want
+      key-store:
+        path: classpath:ssl/keystore.p12
+        password: ${PASS}
+        type: PKCS12
+      trust-store:
+        path: classpath:ssl/truststore.jks
+        password: ${PASS}
+        type: JKS

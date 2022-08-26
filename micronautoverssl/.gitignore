@@ -12,3 +12,9 @@ out/
 .settings
 .classpath
 .factorypath
+*.pem
+*.srl
+*.key
+*.csr
+server.conf
+
